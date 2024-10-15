@@ -93,4 +93,4 @@ The **Spark Structured Streaming Consumer**:
 - **Docker Port Conflicts**: Resolved by checking existing services running on local ports.
 - **Java Configuration Issues**: Ensured `JAVA_HOME` was properly set.
 - **Stream Termination Management**: Used `(timeout=30000)` to stop the stream gracefully.
-- **Spark Kafka Intergration**: Used the submit packages command 'spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.2 kafka_consumer.py' to resolve conflicts
+- **Spark Kafka Intergration**: Used the submit packages command 'spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.2 spark_consumer.py' to resolve conflicts
