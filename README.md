@@ -84,8 +84,8 @@ The **Spark Structured Streaming Consumer**:
 3. Saves the processed data to **CSV files** and uses **checkpoints** for fault tolerance.
 
 ## **8. Output**
--Printed Data: The consumer will print the streamed traffic data to the console.
--Saved Data: The processed data is saved to CSV files in the ./traffic_data directory.
+- Printed Data: The consumer will print the streamed traffic data to the console.
+- Saved Data: The processed data is saved to CSV files in the ./traffic_data directory.
 
 ---
 
