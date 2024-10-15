@@ -87,6 +87,7 @@ The **Spark Structured Streaming Consumer**:
 -Printed Data: The consumer will print the streamed traffic data to the console.
 -Saved Data: The processed data is saved to CSV files in the ./traffic_data directory.
 
+---
 
 ## **9. Challenges Faced**
 - **Docker Port Conflicts**: Resolved by checking existing services running on local ports.
