@@ -15,7 +15,7 @@ producer= KafkaProducer(
 )
 
 #fetching data from google maps API
-api_key= 'AIzaSyAkHjjutiMqSBLZZ9sg8ohU4_L0txVovCw'
+api_key= 'your_google_api_key'
 
 #Nairobi coordinates (KICC is our origin address)
 Nairobi_lat= -1.2887
