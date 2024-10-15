@@ -1,6 +1,4 @@
-# Creating a README.md file with the provided content
-
-readme_content = """# **Real-Time Traffic Data Streaming and Processing using Apache Kafka & Spark**
+# **Real-Time Nairobi Traffic Data Streaming and Processing using Apache Kafka & Spark**
 
 ## **Table of Contents**
 1. [Project Overview](#1-project-overview)  
@@ -29,7 +27,17 @@ The result will be a working data pipeline that shows your ability to manage **r
 ---
 
 ## **2. Project Structure**
+```
+├─venv
+├── docker-compose.yml          # Docker configuration for Kafka, Zookeeper, and Spark
+├── scripts/                    
+│   ├── kafka_producer.py       # Kafka producer sending traffic data to Kafka topic
+│   ├── spark_consumer.py       # Spark consumer reading and processing data from Kafka
+├── checkpoint/                 # Checkpoint directory for stream progress tracking
+└── traffic_data/               # Folder to store processed CSV output
+```
 
+---
 ---
 
 ## **3. Technologies Used**
