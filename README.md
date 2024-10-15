@@ -22,7 +22,7 @@ This project demonstrates the following **core data engineering concepts**:
 - **Checkpointing** and data persistence.
 - **Containerized environment** setup using Docker.
 
-The result will be a working data pipeline that shows your ability to manage **real-time data flow** and **distributed data processing.**
+The result will be a working data pipeline that manages **real-time data flow** and **distributed data processing.**
 
 ---
 
@@ -33,6 +33,7 @@ The result will be a working data pipeline that shows your ability to manage **r
 ├── scripts/                    
 │   ├── kafka_producer.py       # Kafka producer sending traffic data to Kafka topic
 │   ├── spark_consumer.py       # Spark consumer reading and processing data from Kafka
+├── appends.json
 ├── checkpoint/                 # Checkpoint directory for stream progress tracking
 └── traffic_data/               # Folder to store processed CSV output
 ```
@@ -90,4 +91,5 @@ The **Spark Structured Streaming Consumer**:
 ## **9. Challenges Faced**
 - **Docker Port Conflicts**: Resolved by checking existing services running on local ports.
 - **Java Configuration Issues**: Ensured `JAVA_HOME` was properly set.
-- **Stream Termination Management**: Used `(timeout=10000)` to stop the stream gracefully.
+- **Stream Termination Management**: Used `(timeout=30000)` to stop the stream gracefully.
+- **Spark Kafka Intergration**: Used the submit packages command 'spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.2 kafka_consumer.py' to resolve conflicts
