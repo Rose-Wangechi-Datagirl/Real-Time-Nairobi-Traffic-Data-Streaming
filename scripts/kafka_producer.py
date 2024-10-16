@@ -105,14 +105,14 @@ def calculate_congestion(element):
 # if traffic_data:
 #     print(f"Traffic current data successfully added to json file")
 
-#message to kafka
-# while True:
+#continuous loop to send message to kafka
+while True:
 traffic_data = get_traffic_data ()
 if traffic_data:
     producer.send('traffic_nairobi', traffic_data)
     print(f"Traffic data sent to Kafka")
-        # time.sleep (30) #time between sending data
+        time.sleep (30) #time between sending data
 
-# Close the producer
-producer.flush()  # Ensure data is sent before closing
-producer.close()
+# # Close the producer
+# producer.flush()  # Ensure data is sent before closing
+# producer.close()
