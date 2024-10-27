@@ -16,7 +16,7 @@
 ## **1. Project Overview**
 This project showcases **real-time traffic data streaming** by building an end-to-end pipeline using **Apache Kafka** and **Apache Spark**. The traffic data from **Google Maps API** is ingested into Kafka in real time, processed using **Spark Structured Streaming**, and stored in **CSV files** for future analysis.
 
-This project demonstrates the following **core data engineering concepts**:
+This project demonstrates the following **core concepts**:
 - **Real-time data ingestion** via Kafka.
 - **Stream processing** with Spark.
 - **Checkpointing** and data persistence.
